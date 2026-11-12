@@ -14,7 +14,7 @@ Thank you for your interest in contributing to aouo! This guide will help you ge
 
 ```bash
 # Clone the repository
-git clone https://github.com/aouoai/aouo.git
+git clone https://github.com/boltguo/aouo.git
 cd aouo
 
 # Install dependencies
@@ -135,7 +135,7 @@ src/
 
 ## Reporting Issues
 
-- Use [GitHub Issues](https://github.com/aouoai/aouo/issues)
+- Use [GitHub Issues](https://github.com/boltguo/aouo/issues)
 - Include Node.js version, OS, and reproduction steps
 - For security issues, email security@aouo.ai instead
 

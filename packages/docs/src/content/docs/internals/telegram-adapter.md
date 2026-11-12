@@ -5,7 +5,7 @@ description: Bot lifecycle, command surface, callback routing, queueing, status,
 
 This is the engineering blueprint for the Telegram adapter. If you are extending it (adding a command, a callback prefix, a new inbound type) or porting it to another channel, start here.
 
-All citations are file paths into [`packages/agent/src/adapters/telegram/`](https://github.com/aouoai/aouo/tree/main/packages/agent/src/adapters/telegram).
+All citations are file paths into [`packages/agent/src/adapters/telegram/`](https://github.com/boltguo/aouo/tree/main/packages/agent/src/adapters/telegram).
 
 ## Class layout
 

@@ -38,7 +38,7 @@ export function Topbar() {
           local
         </span>
         <a
-          href="https://github.com/aouoai/aouo"
+          href="https://github.com/boltguo/aouo"
           target="_blank"
           rel="noreferrer"
           className="inline-flex items-center gap-1 rounded-md px-1.5 py-0.5 text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"

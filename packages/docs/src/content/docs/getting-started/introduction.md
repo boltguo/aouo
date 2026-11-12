@@ -132,4 +132,4 @@ If you want to build a pack:
 - [Schema & Persist](/build-a-pack/schema/) — storage levels and persist contract
 - [Skills](/build-a-pack/skills/) — `SKILL.md` format
 
-If you want to run the runtime today, it ships on npm as [`@aouo/agent`](https://www.npmjs.com/package/@aouo/agent) — see the package README for install + CLI details.
+To run the runtime locally, build it from source — see the [runtime README](https://github.com/boltguo/aouo/tree/main/packages/agent#install) for setup and CLI details.

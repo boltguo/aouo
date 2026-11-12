@@ -2,13 +2,12 @@
 
 > The runtime + CLI for **aouo packs** — AI-native apps with their own database, memory, schedule, skills, and permissions.
 
-[![npm](https://img.shields.io/npm/v/@aouo/agent.svg)](https://www.npmjs.com/package/@aouo/agent)
 [![Node](https://img.shields.io/badge/node-%3E%3D22-brightgreen.svg)](https://nodejs.org)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](../../LICENSE)
 
 `@aouo/agent` ships the `aouo` CLI and the agent runtime. It loads **packs** — installable AI apps whose state, schedule, and behavior live as plain files on your machine — and runs them on chat channels.
 
-The shipped adapter is Telegram. The agent loop and pack ABI are channel-agnostic. For the project vision and what a pack is, see the [root README](https://github.com/aouoai/aouo#readme).
+The shipped adapter is Telegram. The agent loop and pack ABI are channel-agnostic. For the project vision and what a pack is, see the [root README](https://github.com/boltguo/aouo#readme).
 
 > **Status: pre-alpha.** APIs, CLI commands, and Pack ABI may change before 1.0. Not yet recommended for shared / multi-tenant deployments.
 
@@ -23,18 +22,21 @@ The shipped adapter is Telegram. The agent loop and pack ABI are channel-agnosti
 | `templates/MEMORY.md.tmpl` | Initial evolving state the agent maintains |
 | `i18n/<locale>.json` | Optional localization for fast-path menus |
 
-Three sample packs ship in the repo under [`apps/`](https://github.com/aouoai/aouo/tree/main/apps): `notes` (journaling), `create` (social drafting), `vocab` (CEFR placement + spaced repetition).
+Three sample packs ship in the repo under [`apps/`](https://github.com/boltguo/aouo/tree/main/apps): `notes` (journaling), `create` (social drafting), `vocab` (CEFR placement + spaced repetition).
 
 ---
 
 ## Install
 
-Requires **Node.js ≥ 22**.
+Requires **Node.js ≥ 22** and **pnpm**. Build and link the CLI from source:
 
 ```sh
-npm install -g @aouo/agent@next
-# or
-pnpm add -g @aouo/agent@next
+git clone https://github.com/boltguo/aouo.git
+cd aouo
+pnpm install
+pnpm build
+cd packages/agent
+pnpm link --global
 ```
 
 The CLI is `aouo` (short for the project name).
@@ -51,7 +53,7 @@ aouo pack link <path-to-pack>     # link a local pack into ~/.aouo/packs/
 aouo gateway start                # start the Telegram daemon
 ```
 
-Sample packs live in the [main repo under `apps/`](https://github.com/aouoai/aouo/tree/main/apps): `notes` (journaling), `create` (social drafting), `vocab` (CEFR vocab trainer).
+Sample packs live in the [main repo under `apps/`](https://github.com/boltguo/aouo/tree/main/apps): `notes` (journaling), `create` (social drafting), `vocab` (CEFR vocab trainer).
 
 ### Minimum config
 
@@ -182,9 +184,9 @@ Single test: `pnpm vitest run tests/agent/Agent.test.ts`. Tests set `AOUO_HOME` 
 
 ## Links
 
-- Docs: [aouo.ai](https://aouo.ai)
-- Source: [github.com/aouoai/aouo](https://github.com/aouoai/aouo)
-- Issues: [github.com/aouoai/aouo/issues](https://github.com/aouoai/aouo/issues)
+- Docs: [aouo.pages.dev](https://aouo.pages.dev)
+- Source: [github.com/boltguo/aouo](https://github.com/boltguo/aouo)
+- Issues: [github.com/boltguo/aouo/issues](https://github.com/boltguo/aouo/issues)
 
 ## License
 

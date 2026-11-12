@@ -4,7 +4,7 @@ import starlightThemeBlack from 'starlight-theme-black';
 import remarkMermaid from './src/plugins/remark-mermaid.mjs';
 
 export default defineConfig({
-  site: 'https://aouo.ai',
+  site: 'https://aouo.pages.dev',
   markdown: {
     remarkPlugins: [remarkMermaid],
   },
@@ -35,11 +35,11 @@ export default defineConfig({
           navLinks: [
             { label: 'Get Started', link: '/getting-started/introduction/' },
           ],
-          footerText: '© 2026 AOUO · Apache-2.0 · [GitHub](https://github.com/aouoai/aouo)',
+          footerText: '© 2026 AOUO · Apache-2.0 · [GitHub](https://github.com/boltguo/aouo)',
         }),
       ],
       social: [
-        { icon: 'github', label: 'GitHub', href: 'https://github.com/aouoai/aouo' },
+        { icon: 'github', label: 'GitHub', href: 'https://github.com/boltguo/aouo' },
       ],
       sidebar: [
         {

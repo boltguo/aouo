@@ -4,7 +4,7 @@
 >
 > A pack is more than a prompt or a folder of skills. It is an installable AI app with its own skills, durable storage, memory, schedules, tools, permissions, and UI surface.
 
-[![CI](https://github.com/aouoai/aouo/actions/workflows/ci.yml/badge.svg)](https://github.com/aouoai/aouo/actions/workflows/ci.yml)
+[![CI](https://github.com/boltguo/aouo/actions/workflows/ci.yml/badge.svg)](https://github.com/boltguo/aouo/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 > **Status: pre-alpha.** The runtime exists, the pack ABI is moving, and the product shape is still being narrowed. This README explains the direction, not a stable product contract.
@@ -160,10 +160,10 @@ context:
 
 Full manifest fields, storage levels, persist contract, and skill authoring are in the docs:
 
-- [Pack Spec](https://aouo.ai/concepts/pack-spec/) — manifest fields
-- [Manifest](https://aouo.ai/build-a-pack/manifest/) — `pack.yml` reference
-- [Schema & Persist](https://aouo.ai/build-a-pack/schema/) — storage levels and the persist contract
-- [Skills](https://aouo.ai/build-a-pack/skills/) — `SKILL.md` format
+- [Pack Spec](https://aouo.pages.dev/concepts/pack-spec/) — manifest fields
+- [Manifest](https://aouo.pages.dev/build-a-pack/manifest/) — `pack.yml` reference
+- [Schema & Persist](https://aouo.pages.dev/build-a-pack/schema/) — storage levels and the persist contract
+- [Skills](https://aouo.pages.dev/build-a-pack/skills/) — `SKILL.md` format
 
 ---
 
@@ -185,7 +185,7 @@ The runtime loads context in layers, cheapest first:
 | DB rows         | Pulled by the active workflow           |
 | Memory excerpts | Pulled by policy, not pasted wholesale  |
 
-See [Context Compiler](https://aouo.ai/concepts/context-compiler/) for the full policy model, the quota gate, and runtime enforcement.
+See [Context Compiler](https://aouo.pages.dev/concepts/context-compiler/) for the full policy model, the quota gate, and runtime enforcement.
 
 ---
 
@@ -246,7 +246,7 @@ Permissions are declared in `pack.yml` and shown to the user on install and on e
 
 Every action is audited: token spend, tool calls, persist writes, cron firings, network calls. Packs should also ship evals so a third-party upgrade can be regression-checked before being trusted.
 
-Full permission model, sandbox boundaries, signing plans, lifecycle, and audit details: see [Security & Trust](https://aouo.ai/concepts/security/).
+Full permission model, sandbox boundaries, signing plans, lifecycle, and audit details: see [Security & Trust](https://aouo.pages.dev/concepts/security/).
 
 ---
 
@@ -324,7 +324,6 @@ aouo is not trying to make one universal assistant that knows everything. It is 
 
 ## Project Links
 
-- Docs: [aouo.ai](https://aouo.ai)
-- Source: [github.com/aouoai/aouo](https://github.com/aouoai/aouo)
-- Package: [`@aouo/agent`](https://www.npmjs.com/package/@aouo/agent)
+- Docs: [aouo.pages.dev](https://aouo.pages.dev)
+- Source: [github.com/boltguo/aouo](https://github.com/boltguo/aouo)
 - License: [Apache-2.0](LICENSE)
